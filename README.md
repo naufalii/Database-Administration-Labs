@@ -12,7 +12,7 @@ Selamat datang di repositori portofolio teknis saya. Repositori ini berisi dokum
 
 | Proyek | Deskripsi |
 | :--- | :--- |
-| [Instalasi Oracle 19c](docs/INSTALLATION_ORACLE_19C.md) | Panduan instalasi dan konfigurasi dasar pada Linux. |
+| [Instalasi Oracle 19c](docs/installation-oracle-19c.md) | Panduan instalasi dan konfigurasi dasar pada Linux. |
 | [Backup & Restore (Single)](docs/backup-restore-single.md) | Implementasi strategi backup RMAN pada satu server. |
 | [Network Recovery](docs/backup-restore-cross.md) | Restore database antar server menggunakan Oracle Net Services. |
 | [Data Guard (HA)](docs/dataguard-setup.md) | Konfigurasi *Active Data Guard* untuk *High Availability* & *Disaster Recovery*. |
