@@ -9,6 +9,7 @@ SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 ```
 
 Hasil di Primary : TO STANDBY
+
 Hasil di Standby : NOT ALLOWED
 
 ---
@@ -31,7 +32,7 @@ Hasil seharusnya : PHYSICAL STANDBY  |  RECOVERY NEEDED
 
 ---
 
-### 3. Pindah ke Standby — naikkan pangkat Standby menjadi Primary yang baru (di Standby)
+### 3. Pindah ke Standby, naikkan pangkat Standby menjadi Primary yang baru (di Standby)
 
 ```sql
 ALTER DATABASE COMMIT TO SWITCHOVER TO PRIMARY WITH SESSION SHUTDOWN;
@@ -49,7 +50,7 @@ Hasil seharusnya : PRIMARY
 
 ---
 
-### 4. Verifikasi — buat tabel sederhana untuk memastikan sinkronisasi benar (di Primary baru)
+### 4. Verifikasi, buat tabel sederhana untuk memastikan sinkronisasi benar (di Primary baru)
 
 ```sql
 CREATE TABLE test_switchover (id NUMBER, status VARCHAR2(20));
@@ -87,7 +88,7 @@ Jika sudah ada, maka **Kita Sudah Berhasil melakukan Switch Over.**
 
 ---
 
-### 6. Switch Back — kembalikan server ke kondisi semula
+### 6. Switch Back, kembalikan server ke kondisi semula
 
 **Di Primary baru (exastandby):**
 
@@ -113,7 +114,7 @@ SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 
 Hasil : PRIMARY
 
-Server yang seharusnya Primary — yang sempat menjadi Standby — sekarang sudah menjadi **Primary** lagi.
+Server yang seharusnya Primary lalu sempat menjadi Standby, sekarang sudah menjadi **Primary** lagi.
 
 ---
 
