@@ -8,10 +8,8 @@
 SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 ```
 
-```
 Hasil di Primary : TO STANDBY
 Hasil di Standby : NOT ALLOWED
-```
 
 ---
 
@@ -29,9 +27,7 @@ Lalu, cek ulang statusnya:
 SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 ```
 
-```
 Hasil seharusnya : PHYSICAL STANDBY  |  RECOVERY NEEDED
-```
 
 ---
 
@@ -49,9 +45,7 @@ Lalu, cek ulang statusnya:
 SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 ```
 
-```
 Hasil seharusnya : PRIMARY
-```
 
 ---
 
@@ -105,9 +99,7 @@ STARTUP MOUNT;
 SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 ```
 
-```
 Hasil : PHYSICAL STANDBY  |  NOT ALLOWED
-```
 
 **Di Standby baru (exaprimary):**
 
@@ -119,9 +111,7 @@ ALTER DATABASE OPEN;
 SELECT DATABASE_ROLE, SWITCHOVER_STATUS FROM V$DATABASE;
 ```
 
-```
 Hasil : PRIMARY
-```
 
 Server yang seharusnya Primary — yang sempat menjadi Standby — sekarang sudah menjadi **Primary** lagi.
 
