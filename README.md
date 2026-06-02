@@ -4,7 +4,7 @@ Selamat datang di repositori portofolio teknis saya. Repositori ini berisi dokum
 
 ## 🛠 Tech Stack
 - **Database:** Oracle 19c Enterprise Edition
-- **Tools:** SQL*Plus, RMAN (Recovery Manager), Data Guard Broker
+- **Tools:** SQL*Plus, RMAN (Recovery Manager), Data Guard Broker, Switchover, Switchback, & Failover
 - **OS:** Linux (Oracle Linux)
 - **Networking:** Oracle Net Services (Listener, TNS)
 
@@ -16,6 +16,10 @@ Selamat datang di repositori portofolio teknis saya. Repositori ini berisi dokum
 | [Backup & Restore (Single)](docs/backup-restore-single.md) | Implementasi strategi backup RMAN pada satu server. |
 | [Network Recovery](docs/backup-restore-cross.md) | Restore database antar server menggunakan Oracle Net Services. |
 | [Data Guard (HA)](docs/dataguard-setup.md) | Konfigurasi *Active Data Guard* untuk *High Availability* & *Disaster Recovery*. |
+| [Switchover & Switchback](docs/switchover-and-switchback.md) | Manajemen *Role Transition* terencana untuk pemeliharaan rutin (*planned maintenance*). |
+| [Failover Labs](docs/failover-manual-and-reinstatement.md) | Simulasi penanganan insiden darurat (*unplanned outage*) untuk memindahkan peran ke standby database. |
+
+
 
 ## 🚀 Highlights & Troubleshooting
 Dalam setiap lab, saya fokus tidak hanya pada langkah "Happy Path", tetapi juga melakukan dokumentasi terhadap error riil yang ditemui, seperti:
