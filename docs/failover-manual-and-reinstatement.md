@@ -180,7 +180,7 @@ select standby_became_primary_scn from v$database;
 ```
 Catat angka yang muncul dari kueri, contoh:
 
-![Contoh output SCN dari v$database](scn_screenshot.png)
+![Contoh output SCN dari v$database](images/scn_screenshot.png)
 
 **7. Masuk ke server utama**, nyalakan sebagai mount:
 ```sql
