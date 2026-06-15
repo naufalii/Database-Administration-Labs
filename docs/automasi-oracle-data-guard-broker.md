@@ -73,7 +73,7 @@ Pastikan di dalam blok `SID_LIST_LISTENER` sudah terdaftar sidik jari database s
 )
 ```
 
-![listener.ora configuration](images/image1.png)
+![listener.ora configuration](images/imagew1.png)
 
 Keluar dengan `Ctrl + X`, lalu pilih **"yes"** dan **"Enter"**.
 
@@ -221,7 +221,7 @@ dgmgrl sys/123
 show configuration;
 ```
 
-![show configuration - error setelah primary mati](images/image2.png)
+![show configuration - error setelah primary mati](images/imagew2.png)
 
 Hasilnya akan error karena mendeteksi database `orcl` (Primary) di sebelah sudah hilang dari radar jaringan.
 
@@ -239,7 +239,7 @@ Jika sudah Success maka cek konfigurasinya:
 show configuration
 ```
 
-![show configuration setelah failover berhasil](images/image3.png)
+![show configuration setelah failover berhasil](images/imagew3.png)
 
 - **`orcl_standby - Primary database`**: Server Standby kamu sekarang sudah resmi naik takhta menjadi yang memegang kendali (Read-Write).
 - **`orcl - Physical standby database (disabled)`**: Server Primary lama kamu sekarang statusnya lumpuh (disabled) dan turun kasta menjadi Standby.
