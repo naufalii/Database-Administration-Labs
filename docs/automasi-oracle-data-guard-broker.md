@@ -286,7 +286,7 @@ Karena kedua server sekarang sama-sama hidup dan sehat, kamu bisa melakukan **Tu
 SWITCHOVER TO orcl;
 ```
 
-![show configuration setelah switchover kembali ke posisi awal](images/image4.png)
+![show configuration setelah switchover kembali ke posisi awal]
 
 Begitu perintah itu selesai, posisinya akan otomatis berputar kembali ke setelan pabrik seperti awal.
 
