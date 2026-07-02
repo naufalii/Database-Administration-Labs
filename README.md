@@ -22,8 +22,8 @@ Selamat datang di repositori portofolio teknis saya. Repositori ini berisi dokum
 | :--- | :--- |
 | [Data Guard (HA)](docs/dataguard-setup.md) | Konfigurasi *Active Data Guard* untuk *High Availability* & *Disaster Recovery*. |
 | [Switchover & Switchback](docs/switchover-and-switchback.md) | Manajemen *Role Transition* terencana untuk pemeliharaan rutin (*planned maintenance*). |
-| [Automasi Data Guard Broker (DGMGRL)](docs/automasi-oracle-data-guard-broker.md) | Konfigurasi DGMGRL agar *role transition* cukup dieksekusi dengan satu perintah. |
 | [Failover Labs](docs/failover-manual-and-reinstatement.md) | Simulasi penanganan insiden darurat (*unplanned outage*) untuk memindahkan peran ke standby database, beserta proses *reinstatement*. |
+| [Automasi Data Guard Broker (DGMGRL)](docs/automasi-oracle-data-guard-broker.md) | Konfigurasi DGMGRL agar *role transition* cukup dieksekusi dengan satu perintah. |
 | [Fast Start Failover (FSFO)](docs/fast-start-failover.md) | Konfigurasi *Observer* agar failover ke standby berjalan otomatis tanpa intervensi manual saat primary down. |
 | [Snapshot Standby](docs/snapshot-standby.md) | Mengubah database standby menjadi *read-write* untuk kebutuhan testing tanpa mengorbankan sinkronisasi data. |
 
