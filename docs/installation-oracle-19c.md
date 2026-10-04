@@ -346,7 +346,6 @@ vi .db_profile
 
 **Sesuaikan nama database yang akan kamu buat dan juga lokasi filenya**
 
-![.db_profile - konfigurasi Oracle environment]
 
 ---
 
